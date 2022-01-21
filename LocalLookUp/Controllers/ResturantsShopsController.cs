@@ -7,6 +7,6 @@ using Microsoft.Extensions.Logging;
 
 namespace LocalLookUp.Controllers
 {
-    
+
 }
 
