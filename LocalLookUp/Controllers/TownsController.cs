@@ -20,14 +20,14 @@ namespace LocalLookUp.Controllers
       _db = db;
     }
 
-    // GET api/animals
+    // GET api/towns
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Town>>> Get()
     {
       return await _db.Towns.ToListAsync();
     }
 
-    // POST api/animals
+    // POST api/towns
     [HttpPost]
     public async Task<ActionResult<Town>> Post(Town town)
     {
@@ -49,6 +49,40 @@ namespace LocalLookUp.Controllers
 
       return town;
     }
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Put(int id, Town town)
+    {
+      if (id != town.TownId)
+      {
+        return BadRequest();
+      }
+
+      _db.Entry(town).State = EntityState.Modified;
+
+      try
+      {
+        await _db.SaveChangesAsync();
+      }
+      catch (DbUpdateConcurrencyException)
+      {
+        if (!TownExists(id))
+        {
+          return NotFound();
+        }
+        else
+        {
+          throw;
+        }
+      }
+
+      return NoContent();
+    }
+
+    private bool TownExists(int id)
+      {
+        return _db.Towns.Any(e => e.TownId == id);
+      }
   }
 }
 
