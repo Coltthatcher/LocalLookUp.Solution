@@ -34,7 +34,20 @@ namespace LocalLookUp.Controllers
       _db.Towns.Add(town);
       await _db.SaveChangesAsync();
 
-      return CreatedAtAction("Post", new { id = town.TownId }, town);
+      return CreatedAtAction(nameof(GetTown), new { id = town.TownId }, town);
+    }
+
+    [HttpGet("{id}")]
+    public async Task<ActionResult<Town>> GetTown(int id)
+    {
+      var town = await _db.Towns.FindAsync(id);
+
+      if (town == null)
+      {
+          return NotFound();
+      }
+
+      return town;
     }
   }
 }
