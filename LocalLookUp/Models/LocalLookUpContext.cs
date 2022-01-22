@@ -12,8 +12,8 @@ namespace LocalLookUp.Models
         {
         builder.Entity<Town>()
             .HasData(
-                new Town { TownId = 1, Name = "Bakersfeild", Restaurant = "Woolly Mammoth", Shop = "7" },
-                new Town { TownId = 2, Name = "Andalusia", Restaurant = "Dinosaur", Shop = "" },
+                new Town { TownId = 1, Name = "Bakersfeild", Restaurant = "BakersFeild Pub", Shop = "Karens Curiosities" },
+                new Town { TownId = 2, Name = "Andalusia", Restaurant = "Dessert Pizza", Shop = "Aquari" },
                 new Town { TownId = 3, Name = "Matilda", Restaurant = "Dinosaur", Shop = "" },
                 new Town { TownId = 4, Name = "Chickasaw", Restaurant = "Shark", Shop = "" },
                 new Town { TownId = 5, Name = "Bartholomew", Restaurant = "Dinosaur", Shop = "" },
