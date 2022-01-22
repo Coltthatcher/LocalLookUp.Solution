@@ -79,6 +79,21 @@ namespace LocalLookUp.Controllers
       return NoContent();
     }
 
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteTown(int id)
+    {
+      var town = await _db.Towns.FindAsync(id);
+      if (town == null)
+      {
+        return NotFound();
+      }
+
+      _db.Towns.Remove(town);
+      await _db.SaveChangesAsync();
+
+      return NoContent();
+    }
+
     private bool TownExists(int id)
       {
         return _db.Towns.Any(e => e.TownId == id);
