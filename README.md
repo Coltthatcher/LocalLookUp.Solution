@@ -2,7 +2,7 @@
 
 <br>
 <p align="center">
-  <u><big>|| <b>LocalLookUp API</b> ||</big></u>
+  <u><big><b>LocalLookUp API</b></big></u>
 </p>
 
    
@@ -22,6 +22,7 @@ An Api in which a user can see a Restaurant or Shop posted in a local town look 
 ### Known Bugs
 
 * The Api uses seeded endpoints from this repository, so it is not pulling from a Outsourced Api.
+* There is a limited number of GET search requests, currently you can only search for JSON data with the string Restaurant, string Shop, and String TownId.
 
 ### Built With
 * Visual Studio Code
@@ -106,16 +107,16 @@ Needed to test Api calls [Download and install Postman](https://www.postman.com/
 
 #### HTTP Request Structure
 ```
-GET /api/{(restaurant or shop})}
-POST /api/{(restaurant or shop})}
-GET /api/{(restaurant or shop})}
-PUT /api/{(restaurant or shop)}
-DELETE /api/{(restaurant or shop})}
+GET /api/towns
+POST /api/towns
+GET /api/towns
+PUT /api/towns
+DELETE /api/towns
 ```
 
 ### Searching for an API
 1) When the site is up and running with `dotnet run` have the postman application open on your machine.
-2) if you wish to search for a specific restaurant 
+2) if you wish to search for a specific restaurant enter `http://localhost:5000/api/towns?restaurant=bistro` this will return the JSON Data for that town the restaurant belongs to. Its will work vice versa with shop using the same logic.
 
 
 ### Acknowledgments
