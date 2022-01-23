@@ -22,7 +22,7 @@ An Api in which a user can see a Restaurant or Shop posted in a local town look 
 ### Known Bugs
 
 * The Api uses seeded endpoints from this repository, so it is not pulling from a Outsourced Api.
-* There is a limited number of GET search requests, currently you can only search for JSON data with the string Restaurant, string Shop, and String TownId.
+* There is a limited number of GET search requests, currently you can only search for JSON data with the string Restaurant, string Shop, and Int TownId.
 
 ### Built With
 * Visual Studio Code
