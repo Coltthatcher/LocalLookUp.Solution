@@ -26,14 +26,14 @@ namespace LocalLookUp.Models
                 new Town { TownId = 12, Name = "Yuma", Restaurant = "Bob's Breakfast", Shop = "Put Put golf Spot" },
                 new Town { TownId = 13, Name = "Calexio", Restaurant = "Gastues", Shop = "Kyras Textiles" },
                 new Town { TownId = 14, Name = "Barstow", Restaurant = "Barstow College Pub", Shop = "Oran Organic" },
-                new Town { TownId = 15, Name = "Calexio", Restaurant = "Gastues", Shop = "Kyras Textiles" },
-                new Town { TownId = 16, Name = "Calexio", Restaurant = "Gastues", Shop = "Kyras Textiles" },
-                new Town { TownId = 17, Name = "Calexio", Restaurant = "Gastues", Shop = "Kyras Textiles" },
-                new Town { TownId = 18, Name = "Calexio", Restaurant = "Gastues", Shop = "Kyras Textiles" },
-                new Town { TownId = 19, Name = "Calexio", Restaurant = "Gastues", Shop = "Kyras Textiles" },
-                new Town { TownId = 20, Name = "Calexio", Restaurant = "Gastues", Shop = "Kyras Textiles" },
-                new Town { TownId = 21, Name = "Calexio", Restaurant = "Gastues", Shop = "Kyras Textiles" },
-                new Town { TownId = 22, Name = "Calexio", Restaurant = "Gastues", Shop = "Kyras Textiles" }
+                new Town { TownId = 15, Name = "Puslbo", Restaurant = "Grill King", Shop = "Orca Sounds Trinkets" },
+                new Town { TownId = 16, Name = "Scottsdale", Restaurant = "Ricky's", Shop = "Duck Hunting supply" },
+                new Town { TownId = 17, Name = "Marysville", Restaurant = "Mama Roo's", Shop = "Hillbit Nursery" },
+                new Town { TownId = 18, Name = "San Mateo", Restaurant = "Gastues", Shop = "Kyras Textiles" },
+                new Town { TownId = 19, Name = "Fall River", Restaurant = "Orion", Shop = "Beatrice Bagel" },
+                new Town { TownId = 20, Name = "Groton", Restaurant = "Goreton River Grill", Shop = "Bait and Fish" },
+                new Town { TownId = 21, Name = "Willmar", Restaurant = "Rebel Rouseres", Shop = "Spaghetti Factory" },
+                new Town { TownId = 22, Name = "Missoula", Restaurant = "Corenell's Chicken", Shop = "Om Bap" }
             );
         }
         public DbSet<Town> Towns { get; set; }
