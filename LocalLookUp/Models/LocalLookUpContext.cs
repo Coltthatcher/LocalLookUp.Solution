@@ -17,15 +17,23 @@ namespace LocalLookUp.Models
                 new Town { TownId = 3, Name = "Matilda", Restaurant = "Jeff's Joe Hut", Shop = "Antique 4 You" },
                 new Town { TownId = 4, Name = "Chickasaw", Restaurant = "Smoked Everything", Shop = "SmokeShop" },
                 new Town { TownId = 5, Name = "Bartholomew", Restaurant = "Bistro", Shop = "Avantgarde" },
-                new Town { TownId = 1, Name = "Florence", Restaurant = "Miltons Wing Stop", Shop = "Capella's Cloths Bin" },
-                new Town { TownId = 1, Name = "Guntersville", Restaurant = "Woolly Mammoth Burgers", Shop = "All You Need Pet Ehmporium" },
-                new Town { TownId = 1, Name = "Ozark", Restaurant = "Route 64 Diner", Shop = "711" },
-                new Town { TownId = 1, Name = "Spokane", Restaurant = "Grease Palace", Shop = "Guns Guns and more Guns" },
-                new Town { TownId = 1, Name = "Selma", Restaurant = "Selma Sandwhich Stop", Shop = "Selma Crystals" },
-                new Town { TownId = 1, Name = "Walpi", Restaurant = "Teryaki Walipi", Shop = "Surfs Up" },
-                new Town { TownId = 1, Name = "Yuma", Restaurant = "Bob's Breakfast", Shop = "Put Put golf Spot" },
-                new Town { TownId = 1, Name = "Calexio", Restaurant = "Gastues", Shop = "Kyras Textiles" },
-                new Town { TownId = 1, Name = "Barstow", Restaurant = "Barstow College Pub", Shop = "Oran Organic" }
+                new Town { TownId = 6, Name = "Florence", Restaurant = "Miltons Wing Stop", Shop = "Capella's Cloths Bin" },
+                new Town { TownId = 7, Name = "Guntersville", Restaurant = "Woolly Mammoth Burgers", Shop = "All You Need Pet Emporium" },
+                new Town { TownId = 8, Name = "Ozark", Restaurant = "Route 64 Diner", Shop = "711" },
+                new Town { TownId = 9, Name = "Spokane", Restaurant = "Grease Palace", Shop = "Guns Guns and more Guns" },
+                new Town { TownId = 10, Name = "Selma", Restaurant = "Selma Sandwhich Stop", Shop = "Selma Crystals" },
+                new Town { TownId = 11, Name = "Walpi", Restaurant = "Teryaki Walipi", Shop = "Surfs Up" },
+                new Town { TownId = 12, Name = "Yuma", Restaurant = "Bob's Breakfast", Shop = "Put Put golf Spot" },
+                new Town { TownId = 13, Name = "Calexio", Restaurant = "Gastues", Shop = "Kyras Textiles" },
+                new Town { TownId = 14, Name = "Barstow", Restaurant = "Barstow College Pub", Shop = "Oran Organic" },
+                new Town { TownId = 15, Name = "Calexio", Restaurant = "Gastues", Shop = "Kyras Textiles" },
+                new Town { TownId = 16, Name = "Calexio", Restaurant = "Gastues", Shop = "Kyras Textiles" },
+                new Town { TownId = 17, Name = "Calexio", Restaurant = "Gastues", Shop = "Kyras Textiles" },
+                new Town { TownId = 18, Name = "Calexio", Restaurant = "Gastues", Shop = "Kyras Textiles" },
+                new Town { TownId = 19, Name = "Calexio", Restaurant = "Gastues", Shop = "Kyras Textiles" },
+                new Town { TownId = 20, Name = "Calexio", Restaurant = "Gastues", Shop = "Kyras Textiles" },
+                new Town { TownId = 21, Name = "Calexio", Restaurant = "Gastues", Shop = "Kyras Textiles" },
+                new Town { TownId = 22, Name = "Calexio", Restaurant = "Gastues", Shop = "Kyras Textiles" }
             );
         }
         public DbSet<Town> Towns { get; set; }
