@@ -22,9 +22,16 @@ namespace LocalLookUp.Controllers
 
     // GET api/towns
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Town>>> Get()
+    public async Task<ActionResult<IEnumerable<Town>>> Get(string restaurant)
     {
-      return await _db.Towns.ToListAsync();
+      var query = _db.Towns.AsQueryable();
+
+      if (restaurant != null)
+      {
+        query = query.Where(entry => entry.Restaurant == restaurant);
+      }
+
+      return await query.ToListAsync();
     }
 
     // POST api/towns
