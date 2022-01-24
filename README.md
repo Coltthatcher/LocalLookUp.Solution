@@ -62,7 +62,7 @@ Needed to test Api calls [Download and install Postman](https://www.postman.com/
 
   1) Navigate to the [LocalLookUp.Solution](https://github.com/Coltthatcher/LocalLookUp.Solution).
   2) Click Clone in the upper right corner.
-  3) Open up your system Terminal or GitBash..
+  3) Open up your system Terminal or GitBash.
   4) Clone the repository to your desktop: `$ git clone https://github.com/Coltthatcher/LocalLookUp.Solution.git`
   5) Run the command `cd LocalLookUp.Solution` to get into the project directory.
 
